@@ -25,6 +25,7 @@
     ],
     "types": [
       "bootstrap",
+      "jquery",
       "node"
     ]
   },

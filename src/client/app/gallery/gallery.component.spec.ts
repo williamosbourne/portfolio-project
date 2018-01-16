@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { async, TestBed } from '@angular/core/testing';
 
-import { AboutModule } from './about.module';
+import { GalleryModule } from './gallery.module';
 
 export function main() {
-  describe('About component', () => {
+  describe('Gallery component', () => {
     // Setting module for testing
     // Disable old forms
 
     beforeEach(() => {
       TestBed.configureTestingModule({
         declarations: [TestComponent],
-        imports: [AboutModule]
+        imports: [GalleryModule]
       });
     });
 
@@ -20,9 +20,9 @@ export function main() {
       async(() => {
         TestBed.compileComponents().then(() => {
           const fixture = TestBed.createComponent(TestComponent);
-          const aboutDOMEl = fixture.debugElement.children[0].nativeElement;
+          const galleryDOMEl = fixture.debugElement.children[0].nativeElement;
 
-          expect(aboutDOMEl.querySelectorAll('h2')[0].textContent).toEqual(
+          expect(galleryDOMEl.querySelectorAll('h2')[0].textContent).toEqual(
             'Features'
           );
         });
@@ -33,6 +33,6 @@ export function main() {
 
 @Component({
   selector: 'test-cmp',
-  template: '<sd-about></sd-about>'
+  template: '<sd-gallery></sd-gallery>'
 })
 class TestComponent {}

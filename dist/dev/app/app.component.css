@@ -8,4 +8,6 @@
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
+  background-color: #FFFCD8;
 }
+
